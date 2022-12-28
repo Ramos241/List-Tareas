@@ -18,7 +18,7 @@ In this project I have created an application that is used to save a list of mov
 
 - ### Desktop preview
 
-<img src="./assets/preview.png" style="width: 100%"  />
+<img src="./assets/preview2.png" style="width: 100%"  />
 
 <!-- - ### Mobile preview
 

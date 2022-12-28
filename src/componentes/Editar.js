@@ -39,7 +39,7 @@ export const Editar = ({pelicula, setListaEstado, setEditar}) => {
         <textarea name='descripcion'
                   className='descripcion_editada'
                   defaultValue={pelicula.descripcion}/>
-        <input type="submit"/>
+        <input type="submit" value='Listo'/>
       </form>
     </div>
   )
