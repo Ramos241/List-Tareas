@@ -30,9 +30,6 @@ This challenge was developed with the following languages:
       
 <div align="left" >
 
-  - React 
-  - CSS
-
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="80px" height="70px" />
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="70px" height="70px" />
 
