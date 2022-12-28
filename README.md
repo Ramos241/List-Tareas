@@ -24,9 +24,9 @@ In this project I have created an application that is used to save a list of mov
 
 <img src="./assets/readme/mobile.gif" style="width: 70%"  /> -->
 
-## 🚀 Challenge finished
+## 🚀 Project finished
 
-This challenge was developed with the following languages and frameworks:
+This project was developed with the following languages and frameworks:
       
 <div align="left" >
 
