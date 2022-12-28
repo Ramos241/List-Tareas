@@ -16,11 +16,11 @@
 
 In this project I have created an application that is used to save a list of movies, we can add their name and description, you can also edit or delete movies, after having saved them.
 
-<!-- - ### Desktop preview
+- ### Desktop preview
 
-<img src="./assets/readme/desktop.gif" style="width: 100%"  />
+<img src="./assets/preview.png" style="width: 100%"  />
 
-- ### Mobile preview
+<!-- - ### Mobile preview
 
 <img src="./assets/readme/mobile.gif" style="width: 70%"  /> -->
 
