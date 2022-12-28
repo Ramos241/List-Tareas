@@ -29,17 +29,17 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
 
   return (
     <div className="search">
-    <h3 className="title" >Buscador: {busqueda}</h3>
-    {
-      busqueda.length>0 && <p className={`aviso ${numero===0 && 'aviso__rojo'}`}>Resultados: {numero}</p>
-    }
-    <form onChange={buscar}>
-      <input type="text"
-            name='busqueda'
-            id="search_field"
-            />
-      <button id="search">Buscar</button>
-    </form>
-  </div>
+      <h3 className="title" >Buscador: {busqueda}</h3>
+      {
+        busqueda.length>0 && <p className={`aviso ${numero===0 && 'aviso__rojo'}`}>Resultados: {numero}</p>
+      }
+      <form onChange={buscar}>
+        <input type="text"
+              name='busqueda'
+              id="search_field"
+              />
+        <button id="search" type='submit'>Buscar</button>
+      </form>
+    </div>
   )
 }

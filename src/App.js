@@ -15,16 +15,6 @@ function App() {
         <h1 className="header__nombre">Mis Peliculas</h1>
       </header>
 
-      {/*Barra de navegación*/}
-      <nav className="nav">
-        <ul>
-          <li><a href="/#">Inicio</a></li>
-          <li><a href="/#">Peliculas</a></li>
-          <li><a href="/#">Blog</a></li>
-          <li><a href="/#">Contacto</a></li>
-        </ul>
-      </nav>
-
       <div className="contenedor-secciones">
         {/*Contenido principal*/}
         <section id='content' className='content'>
@@ -40,7 +30,7 @@ function App() {
 
       {/*Pie de página*/}
       <footer className="footer">
-        Developer by <a href="https://victorroblesweb.es">Jaen Figueroa</a> &copy; 2022
+        Developed by <a href="https://victorroblesweb.es">Jaen Figueroa</a> &copy; 2022
       </footer>
 
     </section>
