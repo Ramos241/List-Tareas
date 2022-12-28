@@ -29,6 +29,7 @@ In this project I have created an application that is used to save a list of mov
 This challenge was developed with the following languages:
       
 <div align="left" >
+
   - React 
   - CSS
 
