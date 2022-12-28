@@ -38,7 +38,7 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
             name='busqueda'
             id="search_field"
             />
-      {/* <button id="search">Buscar</button> */}
+      <button id="search">Buscar</button>
     </form>
   </div>
   )

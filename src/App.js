@@ -8,13 +8,11 @@ function App() {
   let [listaEstado, setListaEstado] = useState([])
 
   return (
-    <div className="layout">
+    <section className="layout">
+
       {/* Cabecera */}
       <header className="header">
-        <div className="logo">
-          <div className="play"></div>
-        </div>
-        <h1>MisPelis</h1>
+        <h1 className="header__nombre">Mis Peliculas</h1>
       </header>
 
       {/*Barra de navegación*/}
@@ -44,7 +42,8 @@ function App() {
       <footer className="footer">
         Developer by <a href="https://victorroblesweb.es">Jaen Figueroa</a> &copy; 2022
       </footer>
-    </div>
+
+    </section>
   );
 }
 
