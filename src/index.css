@@ -21,6 +21,7 @@ ol {
   display: flex;
   flex-direction: column;
   background: #f6f7f9;
+  background: #deecf9;
 }
 
 /* HEADER //////////////////////////////////////////////*/
@@ -34,12 +35,7 @@ ol {
   justify-content: center;
   align-items: center;
   height: 100px;
-  background: red;
-
   width: 100%;
-
-  background: #223026;
-  background: linear-gradient(to right, #1b251e, #223026);
   background: #40587c;
 }
 
@@ -173,6 +169,7 @@ input[type='button'] {
   border-radius: 5px;
   background: #f6f7f9;
   background: #4168641d;
+  background: #eaeaea;
   color: #454545;
   width: 80%;
   opacity: 4;
@@ -239,6 +236,7 @@ input[type='button'] {
   text-decoration: none;
   color: #a1c4ff;
   font-weight: 500;
+  color: #deecf9;
 }
 
 /* AGREAGADOS POR MI */
