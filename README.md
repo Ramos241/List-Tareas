@@ -1,6 +1,6 @@
 <div align="center" >
 
-# App para guardar Peliculas 🎬
+# App for movies 🎬
 
 </div>
 
