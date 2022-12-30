@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
+import React, {  } from 'react'
 
 export const Buscador = ({listaEstado, setListaEstado}) => {
 
-  let [busqueda, setBusqueda] = useState('')
-  let [numero, setNumero] = useState(0)
+  // let [busqueda, setBusqueda] = useState('')
+  // let [numero, setNumero] = useState(0)
 
   const buscar = (e)=>{
     let target = e.target
     let busqueda = target.value
 
-    setBusqueda(busqueda)
+    // setBusqueda(busqueda)
 
     //obtener la lsta de peliculas
     let lista_peliculas = JSON.parse(localStorage.getItem('peliculas'))
@@ -20,7 +20,7 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
       return elemento.titulo.toLowerCase().includes(busqueda)
     })
 
-    setNumero(lista_filtrada.length)
+    // setNumero(lista_filtrada.length)
     setListaEstado(lista_filtrada)
   }
 

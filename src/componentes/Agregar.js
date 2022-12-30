@@ -3,7 +3,7 @@ import { GuardarEnStorage } from '../helpers/Guardar_en-storage'
 
 export const Agregar = ({setListaEstado}) => {
 
-  let [pelicula, setPelicula] = useState({})
+  // let [pelicula, setPelicula] = useState({})
 
   const crearPelicula = (e)=>{
     e.preventDefault()
@@ -24,7 +24,7 @@ export const Agregar = ({setListaEstado}) => {
       }
   
       //asignar la pelicula en el estdo
-      setPelicula(nuevaPelicula)
+      // setPelicula(nuevaPelicula)
   
       //ACTUALIZAR ESTADO DEL CONTENEDOR DE PELICULAS*
       setListaEstado((estadoActual)=>{
