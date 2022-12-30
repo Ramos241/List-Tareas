@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { GuardarEnStorage } from '../helpers/Guardar_en-storage'
 
 export const Agregar = ({setListaEstado}) => {
@@ -13,43 +13,92 @@ export const Agregar = ({setListaEstado}) => {
     let titulo = target.titulo.value
     let descripcion  = target.descripcion.value
 
-    // crear la nueva pelicula
-    let nuevaPelicula = {
-      id: new Date().getTime(),
-      titulo,
-      descripcion
+    //comprobar que no esten vacios
+    if (titulo && descripcion) {
+      
+      // crear la nueva pelicula
+      let nuevaPelicula = {
+        id: new Date().getTime(),
+        titulo,
+        descripcion
+      }
+  
+      //asignar la pelicula en el estdo
+      setPelicula(nuevaPelicula)
+  
+      //ACTUALIZAR ESTADO DEL CONTENEDOR DE PELICULAS*
+      setListaEstado((estadoActual)=>{
+        if (Array.isArray(estadoActual)) {
+          return [nuevaPelicula, ...estadoActual]
+        } else{
+          return [nuevaPelicula]
+        }
+      })
+  
+      GuardarEnStorage('peliculas',nuevaPelicula)
+  
+      //CAMBIA EL FORMULARIO A CIRCULO
+      cambiarEstado()
+    } else{
+      cambiarEstado()
     }
 
-    //asignar la pelicula en el estdo
-    setPelicula(nuevaPelicula)
+  }
 
-    //ACTUALIZAR ESTADO DEL CONTENEDOR DE PELICULAS*
-    setListaEstado((estadoActual)=>{
-      if (Array.isArray(estadoActual)) {
-        return [...estadoActual, nuevaPelicula]
-      } else{
-        return [nuevaPelicula]
-      }
-    })
+  //////////////////////////
+  const [activo, setActivo] = useState(false)
+  const boton = useRef()
 
-    GuardarEnStorage('peliculas',nuevaPelicula)
-    // console.log(nuevaPelicula.titulo)
+  const cambiarEstado = ()=>{
+    setActivo(!activo)
   }
 
   return (
-    <div className="add">
-      <h3 className="title">Añadir pelicula</h3>
-      {
-        pelicula.id &&
-        (<p className='aviso' >
-          Haz guardado la pelicula: <b>{pelicula.titulo}</b>
-        </p>)
-      }
-      <form onSubmit={crearPelicula}>
-        <input type="text" id="title" placeholder="Titulo" name='titulo'/>
-        <textarea id="description" placeholder="Descripción" name='descripcion'></textarea>
-        <input type="submit" id="save" value="Guardar" />
-      </form>
-    </div>
+    <>
+      {/* CAJA */}
+      <div className={activo? "contenedor-agregar contenedor-agregar--activo": "contenedor-agregar"} ref={boton}>
+        {
+          activo? (
+            <div>
+              <i className="fa-solid fa-xmark icono-cerrar" onClick={cambiarEstado}></i>
+
+              <h3 className="agregar__titulo">Añadir pelicula</h3>
+              {/* {
+                pelicula.id &&
+                (<p className='aviso' >
+                  Haz guardado la pelicula: <b>{pelicula.titulo}</b>
+                </p>)
+              } */}
+              <form
+                onSubmit={crearPelicula}
+                className='agregar__formulario'>
+                <input 
+                  className='agregar__input'
+                  id="title"
+                  type="text"
+                  autoComplete='off'
+                  placeholder="Titulo"
+                  name='titulo'/>
+                <textarea 
+                  className='agregar__input'
+                  id="description" 
+                  placeholder="Descripción" 
+                  name='descripcion'/>
+                <input
+                  className='agregar__input verde'
+                  type="submit"
+                  id="save"
+                  value="Guardar" />
+              </form>
+            </div>
+          )
+
+          : (
+              <i className="fa-solid fa-plus" onClick={cambiarEstado}></i>
+          )
+        }
+
+      </div>
+    </>
   )
 }

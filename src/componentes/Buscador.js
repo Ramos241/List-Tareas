@@ -13,7 +13,6 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
 
     //obtener la lsta de peliculas
     let lista_peliculas = JSON.parse(localStorage.getItem('peliculas'))
-
     //filtrar las coincidencias
     let lista_filtrada = lista_peliculas.filter(elemento =>{
       // console.log(elemento);
@@ -21,24 +20,19 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
       return elemento.titulo.toLowerCase().includes(busqueda)
     })
 
-
     setNumero(lista_filtrada.length)
-
     setListaEstado(lista_filtrada)
   }
 
   return (
-    <div className="search">
-      <h3 className="title" >Buscador: {busqueda}</h3>
-      {
-        busqueda.length>0 && <p className={`aviso ${numero===0 && 'aviso__rojo'}`}>Resultados: {numero}</p>
-      }
+    <div className="caja-buscador">
       <form onChange={buscar}>
         <input type="text"
               name='busqueda'
               id="search_field"
+              autoComplete='off'
               />
-        {/* <button id="search" type='submit'>Buscar</button> */}
+        <button id="search" type='submit'>Buscar</button>
       </form>
     </div>
   )
