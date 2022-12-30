@@ -334,6 +334,7 @@ textarea.agregar__input{
     padding: 1rem 3rem;
     padding: 1.3rem 3rem;
     padding: 1.3rem 3rem;
+    padding: 1.5rem 3rem;
     border-radius: .5rem;
   }
 
@@ -377,6 +378,7 @@ textarea.agregar__input{
   /* FOOTER */
   .footer{
     padding: 4rem 0 5rem;
+    padding: 4rem 0 3rem;
   }
 }
 
@@ -403,3 +405,41 @@ textarea.agregar__input{
 .verde:hover{
   background: green !important;
 } */
+
+.contenedor__noResultados{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+  /* background: red; */
+  height: 500px;
+}
+.noResultados__imagen{
+  width: 250px;
+}
+.noResultados__titulo{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.noResultados__parrafo{
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .noResultados__imagen{
+    width: 300px;
+  }
+  .noResultados__titulo{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.contenedor__noResultados.pelicula--seleccionado{
+  background-color: transparent;
+}

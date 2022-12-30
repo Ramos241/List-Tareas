@@ -1,7 +1,8 @@
 import {useState} from 'react'
 import {Agregar} from './Agregar'
 import {Buscador} from './Buscador'
-import {Contenedor} from './Contenedor'
+import { Caja } from './Caja'
+// import {Contenedor} from './Contenedor'
 // import { Editar } from './Editar'
 
 function Inicio() {
@@ -10,7 +11,7 @@ function Inicio() {
   return (
     <>
       <Buscador listaEstado={listaEstado} setListaEstado={setListaEstado} />
-      <Contenedor listaEstado={listaEstado} setListaEstado={setListaEstado} />
+      <Caja listaEstado={listaEstado} setListaEstado={setListaEstado} />
       <Agregar setListaEstado={setListaEstado} />
     </>
   )

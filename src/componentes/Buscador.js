@@ -16,7 +16,7 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
     //filtrar las coincidencias
     let lista_filtrada = lista_peliculas.filter(elemento =>{
       // console.log(elemento);
-      console.log(elemento.titulo, busqueda)
+      // console.log(elemento.titulo, busqueda)
       return elemento.titulo.toLowerCase().includes(busqueda)
     })
 
