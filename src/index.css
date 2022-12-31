@@ -262,6 +262,7 @@ body::-webkit-scrollbar{
 
   gap: 1rem;
 }
+
 .agregar__input{
   padding: 1rem;
   border-radius: 0.5rem;
@@ -284,7 +285,7 @@ body::-webkit-scrollbar{
 }
 textarea.agregar__input{
   resize: none;
-  height: 150px;
+  height: 130px;
 }
 
 .contenedor-agregar .icono-cerrar{
@@ -357,9 +358,10 @@ textarea.agregar__input{
 
 .editar__boton-listo{
   box-shadow: 0rem 0.2rem 0.6rem rgba(0, 0, 0, 0.4);
+  background-color: rgb(222, 222, 222);
 }
 .editar__boton-listo:hover{
-  background-color: lightgrey;
+  background: #a2aebf;
 }
 
 .icono-cerrar-editar{
@@ -443,10 +445,15 @@ textarea.agregar__input{
   }
 
   /* AGREGAR */
+
+  .agregar__formulario{
+    gap: 1.5rem;
+  }
   .contenedor-agregar--activo{
     padding: 3rem 3rem 4rem;
     width: 38rem;
     height: 47rem;
+    padding: 2rem 2rem 2.5rem;
   }
 
   .agregar__titulo{
@@ -455,6 +462,20 @@ textarea.agregar__input{
 
   .agregar__input[type=submit]{
     padding: 1.5rem;
+  }
+
+  .agregar__titulo{
+    display: block;
+  }
+
+  textarea.agregar__input{
+    resize: none;
+    height: 230px;
+  }
+
+  .agregar__formulario input,
+  .agregar__formulario textarea{
+    padding: 1.3rem;
   }
   /* EDITAR */
 
@@ -491,6 +512,7 @@ textarea.agregar__input{
   .editar__fomulario textarea{
     height: 20rem;
     resize: none;
+    padding: 1.5rem;
   }
 
   .icono-cerrar-editar{
