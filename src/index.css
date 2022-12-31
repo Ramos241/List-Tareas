@@ -147,6 +147,21 @@ body::-webkit-scrollbar{
 
   /* box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1); */
 
+  position: relative;
+
+}
+
+.icono-jalar{
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+  color: #7b9ca8;
+  color: #5f7b86;
+  font-size: 2rem;
+  cursor: grab;
+}
+.aver{
+  background: red;
 }
 .pelicula--seleccionado{
   background: var(--terciario);
@@ -273,6 +288,8 @@ textarea.agregar__input{
 .contenedor-agregar .icono-cerrar:hover{
   color: lightgrey;
 }
+
+
 
 /* SECCION EDITAR */
 .contenedor-editar{

@@ -20,6 +20,9 @@ export const Pelicula = ({pelicula, setListaEstado, setPeliEditar}) => {
   return (
     <>
       <article className="pelicula">
+
+        <i class="fa-solid fa-grip icono-jalar"></i>
+
         <h3 className="pelicula__titulo">{pelicula.titulo}</h3>
         <p className="pelicula__descripcion">{pelicula.descripcion}</p>
         

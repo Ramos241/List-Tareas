@@ -20,6 +20,8 @@ export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
       chosenClass: 'pelicula--seleccionado',
       dragClass: 'pelicula--invisible',
       filter: '.contenedor__noResultados' ,
+      handle: '.icono-jalar',
+
       onEnd: function (evento) {
 
         //comrobar que no sea la imagen de o hay resultados
