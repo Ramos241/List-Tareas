@@ -163,8 +163,11 @@ body::-webkit-scrollbar{
   justify-content: space-between;
   flex-grow: 1;
 
-  /* box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1); */
+  box-shadow: 0.1rem 0.2rem 1px rgba(0, 0, 0, 0.1);
   position: relative;
+
+  /* background: linear-gradient(140deg, #add8e6 50%, #99c1cf); */
+  /* color: white; */
 }
 
 .pelicula--seleccionado{
