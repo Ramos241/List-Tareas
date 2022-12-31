@@ -357,13 +357,14 @@ textarea.agregar__input{
   align-items: center;
   width: 100%;
   padding-top: 30px;
-  /* background: red; */
   height: max-content;
-  margin-top: 20px;
   height: calc(100vh - 30rem);
+  min-height: 350px;
 }
 .noResultados__imagen{
   width: 250px;
+  min-width: 250px;
+  min-height: 250px;
 }
 .noResultados__titulo{
   font-size: 2rem;
