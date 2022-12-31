@@ -48,6 +48,7 @@ body::-webkit-scrollbar{
   /* flex-wrap: wrap; */
 
   background: linear-gradient( 90deg, #344865, #40587c);
+  background:  #40587c;
   /* background: linear-gradient( -90deg, #344865 30%, transparent, #344865 85% ), url(../src/assets/fondo2.png); */
   /* background-image: url(../src/assets/fondo2.png); */
   background-size: cover;
