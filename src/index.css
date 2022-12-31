@@ -304,22 +304,27 @@ textarea.agregar__input{
 
   transition: 300ms;
   box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
+
+  padding: 4rem 1rem 1rem;
 }
 
 
 .editar__titulo{
-  font-size: 3rem;
   font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   /* background-color: violet; */
   text-align: center;
   margin-bottom: 2rem;
   color: white;
+
+  display: none;
 }
 .editar__fomulario{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  gap: 1rem;
 }
 .editar__fomulario input,
 .editar__fomulario textarea{
@@ -327,6 +332,8 @@ textarea.agregar__input{
   border-radius: .5rem;
   border: none;
   outline: none;
+
+  padding: 0.5rem;
 }
 .editar__fomulario textarea{
   /* height: 20rem; */
@@ -343,9 +350,9 @@ textarea.agregar__input{
 
 .icono-cerrar-editar{
   position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
-  font-size: 2.5rem;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
   transition: 200ms;
   color: white;
 }
@@ -441,6 +448,7 @@ textarea.agregar__input{
   .editar__titulo{
     font-size: 3rem;
     font-weight: 600;
+    display: block;
   }
 
   .contenedor-editar{
@@ -456,11 +464,25 @@ textarea.agregar__input{
     left: calc(50% - calc(var(--ancho) / 2));
   
     height: max-content;
+
+    padding: 2rem;
+  }
+  .editar__fomulario{
+    gap: 2rem;
   }
 
+  .editar__fomulario input{
+    padding: 1.5rem;
+  }
   .editar__fomulario textarea{
     height: 20rem;
     resize: none;
+  }
+
+  .icono-cerrar-editar{
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 2.5rem;
   }
 
   /* FOOTER */
