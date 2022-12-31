@@ -331,6 +331,21 @@ textarea.agregar__input{
 
 
 
+.icono-cerrar-editar{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 2.5rem;
+  transition: 200ms;
+  color: white;
+}
+.icono-cerrar-editar:hover{
+  color: lightgrey;
+}
+
+
+
+
 
 
 

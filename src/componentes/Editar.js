@@ -31,23 +31,25 @@ export const Editar = ({ setListaEstado, peliEditar, setPeliEditar}) => {
     return (
         <div className='contenedor-editar'>
   
-            <h3 className='editar__titulo'>Editar Pelicula</h3>
-            <form onSubmit={(evento)=>actualizarPelicula(evento, peliEditar.id)}
-                  className='editar__fomulario'>
-              <input name='titulo'
-                    className='titulo_editado'
-                    type="text"
-                    autoComplete='off'
-                    defaultValue={peliEditar.titulo} />
-              <textarea name='descripcion'
-                        className='descripcion_editada'
-                        autoComplete='off'
-                        defaultValue={peliEditar.descripcion}/>
-              <input
-                className='editar__boton-listo verde'
-                type="submit"
-                value='Listo'/>
-            </form>
+          <i className="fa-solid fa-xmark icono-cerrar-editar" onClick={()=>setPeliEditar(-1)}></i>
+
+          <h3 className='editar__titulo'>Editar Pelicula</h3>
+          <form onSubmit={(evento)=>actualizarPelicula(evento, peliEditar.id)}
+                className='editar__fomulario'>
+            <input name='titulo'
+                  className='titulo_editado'
+                  type="text"
+                  autoComplete='off'
+                  defaultValue={peliEditar.titulo} />
+            <textarea name='descripcion'
+                      className='descripcion_editada'
+                      autoComplete='off'
+                      defaultValue={peliEditar.descripcion}/>
+            <input
+              className='editar__boton-listo verde'
+              type="submit"
+              value='Listo'/>
+          </form>
   
         </div>
     )
