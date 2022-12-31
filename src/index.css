@@ -241,7 +241,7 @@ body::-webkit-scrollbar{
   border-radius: .5rem;
   position: fixed;
 
-  bottom: 1.5rem;
+  bottom: 1rem;
   right: 1rem;
   transition: 200ms;
 
