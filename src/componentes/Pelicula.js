@@ -31,14 +31,14 @@ export const Pelicula = ({pelicula, setListaEstado, setPeliEditar}) => {
             className="pelicula__boton naranja" 
             onClick={()=>{setPeliEditar(pelicula)}}
             title='Editar'>
-              {/* Editar */}
+              Editar
               <i className="fa-solid fa-pen-to-square iconos-pelicula" ></i>
           </button>
           <button 
             className="pelicula__boton rojo"
             onClick={()=>eliminarPelicula(pelicula.id)}
             title='Eliminar'>
-              {/* Borrar */}
+              Borrar
               <i className="fa-solid fa-trash iconos-pelicula"></i>
           </button>
         </div>
