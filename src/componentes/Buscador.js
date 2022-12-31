@@ -25,15 +25,23 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
   }
 
   return (
-    <div className="caja-buscador">
-      <form onChange={buscar}>
-        <input type="text"
-              name='busqueda'
-              id="search_field"
-              autoComplete='off'
-              />
-        <button id="search" type='submit'>Buscar</button>
-      </form>
-    </div>
+    <section className='header'>
+      {/*HEADER */}
+      <header className="header__logo">
+        <h1 className="header__nombre">Mis Peliculas</h1>
+      </header>
+    
+      {/* NAV */}
+      <div className="caja-buscador">
+        <form onChange={buscar}>
+          <input type="text"
+                name='busqueda'
+                id="search_field"
+                autoComplete='off'
+                />
+          <button id="search" type='submit'>Buscar</button>
+        </form>
+      </div>
+    </section>
   )
 }

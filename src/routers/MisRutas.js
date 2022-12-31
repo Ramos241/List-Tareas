@@ -8,9 +8,7 @@ export const MisRutas = () => {
     <HashRouter>
 
       {/* HEADER*/}
-      <header className="header">
-        <h1 className="header__nombre">Mis Peliculas</h1>
-      </header>
+
 
       {/* CUERPO */}
       <main className='main'>
