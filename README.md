@@ -39,6 +39,6 @@ This project was developed with the following languages and frameworks:
 
 ## 🌍 Website
 
-You can try my final result [here](https://helpful-hummingbird-56ea89.netlify.app/).
+You can try my final result [here](https://manage-movie-list.netlify.app/).
 
 <img src="https://octodex.github.com/images/welcometocat.png" style="width: 25%">
