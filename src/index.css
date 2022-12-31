@@ -142,6 +142,7 @@ body::-webkit-scrollbar{
   color: #7b9ca8;
   color: #5f7b86;
   font-size: 2rem;
+  font-size: 2.3rem;
   cursor: grab;
 }
 
@@ -570,3 +571,6 @@ textarea.agregar__input{
 }
 
 
+.iconos-pelicula{
+  font-size: 2rem;
+}
