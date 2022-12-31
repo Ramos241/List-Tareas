@@ -12,14 +12,11 @@
     "sortablejs": "^1.15.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://jaenfigueroa.github.io/app-for-movies",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

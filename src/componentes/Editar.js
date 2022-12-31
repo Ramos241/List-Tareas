@@ -31,7 +31,7 @@ export const Editar = ({ setListaEstado, peliEditar, setPeliEditar}) => {
     return (
         <div className='contenedor-editar'>
   
-            <h3 className='editar__titulo'>Editar</h3>
+            <h3 className='editar__titulo'>Editar Pelicula</h3>
             <form onSubmit={(evento)=>actualizarPelicula(evento, peliEditar.id)}
                   className='editar__fomulario'>
               <input name='titulo'
