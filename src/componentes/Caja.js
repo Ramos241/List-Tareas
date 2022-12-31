@@ -5,25 +5,28 @@ import { NoResultados } from './NoResultados';
 
 export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
 
-  // let [editar, setEditar] = useState(-1)
-
   //SORTABLE
   const listRef = useRef()
   
-  // let [editar, setEditar] = useState(0)
-
   useEffect(()=>{
     let resultado = traerPeliculas()
     setListaEstado(resultado)
 
-    //SORTABLE
-    //verificar que haya mas de un elemento , para activar sortable
-      
+  },[setListaEstado, listRef])
+
+
+  useEffect(()=>{
+    console.log('se cargo')
+
+
+    console.log('largo:', listaEstado.length);
+
       new Sortable(listRef.current, {
   
         animation: 200,
         chosenClass: 'pelicula--seleccionado',
         dragClass: 'pelicula--invisible',
+        filter: '.contenedor__noResultados' ,
         onEnd: function (evento) {
   
           //comrobar que no sea la imagen de o hay resultados
@@ -54,9 +57,8 @@ export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
           }
         } 
       })
-      
-
-  },[setListaEstado, listRef])
+    
+  })
 
 
   const traerPeliculas = ()=>{
@@ -64,6 +66,12 @@ export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
     
     return peliculas
   }
+
+
+  //////////////////////
+
+
+
 
 
   return (
@@ -79,7 +87,7 @@ export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
 
                 setPeliEditar={setPeliEditar} />
             )
-            }) : <NoResultados/>
+            }) : <NoResultados />
           }
     </div>
   )
