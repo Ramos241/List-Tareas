@@ -1,16 +1,20 @@
+//GUARGAR Y ACTUALIZAR LAS PELICULAS DE STORAGE///////////////////////////////
 export const GuardarEnStorage = (grupo, elementoNuevo)=>{
-  //obtener el array del localStorage
+
   let elemento = JSON.parse(localStorage.getItem(grupo))
 
-  //verificar si el elemento obtenido es un array
+  //verificar si lo que traje del local storage,es es un array
   if (Array.isArray(elemento)) {
-    //añadir dentro del array el elemento a guardar
-    elemento.push(elementoNuevo)
+    //si es,añadir dentro de ese array el elemento nuevo que quiero guardar
+    // elemento.push(elementoNuevo)
+
+    elemento = [elementoNuevo, ...elemento]
   } else{
-    //crear el array con el elemento nuevo
+    //si no es, crear un nuevo array con el elemento nuevo dentro
     elemento = [elementoNuevo]
   }
 
-  // guardar el array actualizado en el local Storage
+  // finalmente, guardar el array actualizado en el local Storage
   localStorage.setItem(grupo, JSON.stringify(elemento))
 }
+

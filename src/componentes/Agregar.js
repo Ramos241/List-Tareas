@@ -29,12 +29,13 @@ export const Agregar = ({setListaEstado}) => {
       //ACTUALIZAR ESTADO DEL CONTENEDOR DE PELICULAS*
       setListaEstado((estadoActual)=>{
         if (Array.isArray(estadoActual)) {
-          return [nuevaPelicula, ...estadoActual]
+          return [nuevaPelicula, ...estadoActual ]
         } else{
           return [nuevaPelicula]
         }
       })
   
+      //guardar en local storage
       GuardarEnStorage('peliculas',nuevaPelicula)
   
       //CAMBIA EL FORMULARIO A CIRCULO

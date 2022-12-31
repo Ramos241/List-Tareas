@@ -3,7 +3,9 @@ import { Pelicula } from './Pelicula';
 import Sortable from 'sortablejs';
 import { NoResultados } from './NoResultados';
 
-export const Caja = ({listaEstado, setListaEstado}) => {
+export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
+
+  // let [editar, setEditar] = useState(-1)
 
   //SORTABLE
   const listRef = useRef()
@@ -16,47 +18,42 @@ export const Caja = ({listaEstado, setListaEstado}) => {
 
     //SORTABLE
     //verificar que haya mas de un elemento , para activar sortable
-
-    new Sortable(listRef.current, {
-
-      animation: 200,
-      chosenClass: 'pelicula--seleccionado',
-      dragClass: 'pelicula--invisible',
-      onEnd: function (evento) {
-
-        //comrobar que no sea la imagen de o hay resultados
-        if (evento.clone.className !== 'contenedor__noResultados') {
-
-          // console.log(evento.clone.className)
-          // Actualiza el array con el nuevo orden de los elementos
-          setListaEstado((lista)=>{
-            
-            //sacamos los indices
-            let indiceAntes = evento.oldIndex
-            let indiceNuevo = evento.newIndex
+      
+      new Sortable(listRef.current, {
   
-            //ACTUALIZAMOS EN ARREGLO
-            ////////////
-            let elemento = lista.splice(indiceAntes, 1);
-            let grupo = lista.splice(0, indiceNuevo)
+        animation: 200,
+        chosenClass: 'pelicula--seleccionado',
+        dragClass: 'pelicula--invisible',
+        onEnd: function (evento) {
   
-            let actualizado = [...grupo, ...elemento, ...lista]
-            ////////////
+          //comrobar que no sea la imagen de o hay resultados
+          if (evento.clone.className !== 'contenedor__noResultados' ) {
   
-            //guardar el nuevo arreglo el local storage
-            localStorage.setItem('peliculas', JSON.stringify([...actualizado]))
-  
-            //guardar el nuevo arreglo al estado
-            return [...actualizado]
-          })
-  
-        } else{
-          // chosenClass: 'pelicula--seleccionado',
-          // chosenClass: 'pelicula--seleccionado',
-        }
-          
-      } 
-    })
+            // console.log(evento.clone.className)
+            // Actualiza el array con el nuevo orden de los elementos
+            setListaEstado((lista)=>{
+              
+              //sacamos los indices
+              let indiceAntes = evento.oldIndex
+              let indiceNuevo = evento.newIndex
+    
+              //ACTUALIZAMOS EN ARREGLO
+              ////////////
+              let elemento = lista.splice(indiceAntes, 1);
+              let grupo = lista.splice(0, indiceNuevo)
+    
+              let actualizado = [...grupo, ...elemento, ...lista]
+              ////////////
+    
+              //guardar el nuevo arreglo el local storage
+              localStorage.setItem('peliculas', JSON.stringify([...actualizado]))
+    
+              //guardar el nuevo arreglo al estado
+              return [...actualizado]
+            })
+          }
+        } 
+      })
       
 
   },[setListaEstado, listRef])
@@ -77,7 +74,10 @@ export const Caja = ({listaEstado, setListaEstado}) => {
 
               <Pelicula
                 pelicula={pelicula}
-                setListaEstado={setListaEstado} key={pelicula.id}/>
+                setListaEstado={setListaEstado}
+                key={pelicula.id}
+
+                setPeliEditar={setPeliEditar} />
             )
             }) : <NoResultados/>
           }

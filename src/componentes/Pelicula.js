@@ -1,9 +1,6 @@
-import React, {useState} from 'react'
-import { Editar } from './Editar'
+import React from 'react'
 
-export const Pelicula = ({pelicula, setListaEstado}) => {
-
-  let [editar, setEditar] = useState(0)
+export const Pelicula = ({pelicula, setListaEstado, setPeliEditar}) => {
 
   const traerPeliculas = ()=>{
     let peliculas = JSON.parse(localStorage.getItem('peliculas'))
@@ -20,32 +17,23 @@ export const Pelicula = ({pelicula, setListaEstado}) => {
     localStorage.setItem('peliculas', JSON.stringify(nuevaLista))
   }
 
-  const editarPelicula = (id) =>{
-    // console.log('se edita la pelicula', id);
-    setEditar(id)
-  }
-
   return (
-    <article className="pelicula">
-      <h3 className="pelicula__titulo">{pelicula.titulo}</h3>
-      <p className="pelicula__descripcion">{pelicula.descripcion}</p>
-      
-      <div className='pelicula__botones'>
-        <button 
-          className="pelicula__boton naranja" 
-          onClick={()=>{editarPelicula(pelicula.id)}}>Editar</button>
-        <button 
-          className="pelicula__boton rojo"
-          onClick={()=>eliminarPelicula(pelicula.id)}>Borrar</button>
-      </div>
-      
-      {
-        editar === pelicula.id && (
-          <Editar pelicula={pelicula}
-                  setListaEstado={setListaEstado}
-                  setEditar = {setEditar}/>
-        )
-      }
-    </article>
+    <>
+      <article className="pelicula">
+        <h3 className="pelicula__titulo">{pelicula.titulo}</h3>
+        <p className="pelicula__descripcion">{pelicula.descripcion}</p>
+        
+        <div className='pelicula__botones'>
+          <button 
+            className="pelicula__boton naranja" 
+            onClick={()=>{setPeliEditar(pelicula)}}>Editar</button>
+          <button 
+            className="pelicula__boton rojo"
+            onClick={()=>eliminarPelicula(pelicula.id)}>Borrar</button>
+        </div>
+        
+      </article>
+    
+    </>
   )
 }
