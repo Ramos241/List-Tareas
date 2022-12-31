@@ -478,6 +478,12 @@ textarea.agregar__input{
   .agregar__formulario textarea{
     padding: 1.3rem;
   }
+
+  .contenedor-agregar .icono-cerrar{
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 2.5rem;
+  }
   /* EDITAR */
 
 
