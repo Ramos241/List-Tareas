@@ -280,6 +280,7 @@ body::-webkit-scrollbar{
 
   margin-top: 0rem;
 }
+
 .agregar__input[type=submit]:hover{
   background: var(--terciario);
 }
