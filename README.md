@@ -39,6 +39,6 @@ This project was developed with the following languages and frameworks:
 
 ## 🌍 Website
 
-You can try my final result [here](https://jaenfigueroa.github.io/app-for-movies).
+You can try my final result [here](https://helpful-hummingbird-56ea89.netlify.app/).
 
 <img src="https://octodex.github.com/images/welcometocat.png" style="width: 25%">
