@@ -360,7 +360,7 @@ textarea.agregar__input{
   width: 30rem;
   height: max-content;
 
-  top: calc(50% - 18rem);
+  top: calc(50% - 12rem);
   left: calc(50% - 15rem);
 
   transition: 300ms;
@@ -371,6 +371,8 @@ textarea.agregar__input{
   transition: 3s;
 
   animation: crecer 300ms;
+
+  background: red;
 }
 
 @keyframes crecer {
@@ -568,6 +570,7 @@ textarea.agregar__input{
     height: max-content;
 
     padding: 2rem;
+
   }
   .editar__fomulario{
     gap: 2rem;
