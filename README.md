@@ -36,7 +36,7 @@ In this project I have created an application that is used to save a list of mov
 
 </div>
 
-### 2. Library
+### 2. Library and Frameworks
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="75px" height="70px" />
 
