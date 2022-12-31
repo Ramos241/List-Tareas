@@ -68,7 +68,7 @@ export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
 
   return (
     <div className='contenedor-peliculas' ref={listRef}>
-          { listaEstado.length >0 && listaEstado !== null ?
+          { listaEstado !== null && listaEstado.length > 0 ?
             listaEstado.map((pelicula)=>{
             return(
 
