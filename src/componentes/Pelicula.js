@@ -21,7 +21,7 @@ export const Pelicula = ({pelicula, setListaEstado, setPeliEditar}) => {
     <>
       <article className="pelicula">
 
-        <i className="fa-solid fa-grip icono-jalar"></i>
+        <i className="fa-solid fa-grip icono-jalar" title='Mover de posicion'></i>
 
         <h3 className="pelicula__titulo">{pelicula.titulo}</h3>
         <p className="pelicula__descripcion">{pelicula.descripcion}</p>
@@ -29,14 +29,16 @@ export const Pelicula = ({pelicula, setListaEstado, setPeliEditar}) => {
         <div className='pelicula__botones'>
           <button 
             className="pelicula__boton naranja" 
-            onClick={()=>{setPeliEditar(pelicula)}}>
-              Editar&nbsp;&nbsp;
-              <i className="fa-solid fa-pen-to-square iconos-pelicula"></i>
+            onClick={()=>{setPeliEditar(pelicula)}}
+            title='Editar'>
+              {/* Editar */}
+              <i className="fa-solid fa-pen-to-square iconos-pelicula" ></i>
           </button>
           <button 
             className="pelicula__boton rojo"
-            onClick={()=>eliminarPelicula(pelicula.id)}>
-              Borrar&nbsp;&nbsp;
+            onClick={()=>eliminarPelicula(pelicula.id)}
+            title='Eliminar'>
+              {/* Borrar */}
               <i className="fa-solid fa-trash iconos-pelicula"></i>
           </button>
         </div>

@@ -39,7 +39,10 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
                 id="search_field"
                 autoComplete='off'
                 />
-          <button id="search" type='submit'>Buscar</button>
+          <button id="search" type='submit'>
+            <i class="fa-solid fa-magnifying-glass icono-lupa"></i>
+            Buscar
+            </button>
         </form>
       </div>
     </section>

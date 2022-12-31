@@ -18,7 +18,7 @@ export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
   
       animation: 200,
       chosenClass: 'pelicula--seleccionado',
-      dragClass: 'pelicula--invisible',
+      // dragClass: 'pelicula--invisible',
       filter: '.contenedor__noResultados' ,
       handle: '.icono-jalar',
 

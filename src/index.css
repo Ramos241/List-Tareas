@@ -115,10 +115,16 @@ body::-webkit-scrollbar{
 }
 .caja-buscador button{
   width: 10rem;
+  width: 13rem;
   border: none;
   border-radius: 0 1rem 1rem 0;
   padding: 0.5rem;
   background: var(--cuaternario);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .caja-buscador button:hover{
   background: var(--terciario);
@@ -183,7 +189,6 @@ body::-webkit-scrollbar{
   flex-grow: 1;
 }
 .pelicula__botones{
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -198,9 +203,24 @@ body::-webkit-scrollbar{
   box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
   /* background: #40587c;
   color: white; */
+
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 0.9rem;
 }
 .pelicula__boton:hover{
   background: var(--primario);
+  color: white;
+}
+
+.iconos-pelicula{
+  font-size: 2rem;
+  color: #40587c;
+}
+
+.pelicula__boton:hover .iconos-pelicula{
+  font-size: 2rem;
   color: white;
 }
 
@@ -534,6 +554,13 @@ textarea.agregar__input{
     padding: 4rem 0 5rem;
     padding: 4rem 0 3rem;
   }
+
+
+  .caja-buscador button{
+    width: 12rem;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 800px) {
@@ -571,6 +598,3 @@ textarea.agregar__input{
 }
 
 
-.iconos-pelicula{
-  font-size: 2rem;
-}
