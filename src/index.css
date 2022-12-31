@@ -253,7 +253,8 @@ body::-webkit-scrollbar{
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  z-index: 2;
+  
+  /* z-index: 2; */
 }
 .contenedor-agregar--activo{
   background: var(--primario);
@@ -372,7 +373,7 @@ textarea.agregar__input{
 
   animation: crecer 300ms;
 
-  background: green;
+  /* background: green; */
 }
 
 @keyframes crecer {
