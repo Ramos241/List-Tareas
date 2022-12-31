@@ -360,7 +360,7 @@ textarea.agregar__input{
   width: 30rem;
   height: max-content;
 
-  top: calc(50% - 12rem);
+  top: calc(50% - 13.5rem);
   left: calc(50% - 15rem);
 
   transition: 300ms;
@@ -372,7 +372,7 @@ textarea.agregar__input{
 
   animation: crecer 300ms;
 
-  background: red;
+  background: green;
 }
 
 @keyframes crecer {
