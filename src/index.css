@@ -46,10 +46,17 @@ body::-webkit-scrollbar{
   gap: 1rem;
 
   /* flex-wrap: wrap; */
+
+  background: linear-gradient( 90deg, #344865, #40587c);
+  /* background: linear-gradient( -90deg, #344865 30%, transparent, #344865 85% ), url(../src/assets/fondo2.png); */
+  /* background-image: url(../src/assets/fondo2.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .header__logo{
   /* background-color: rgb(225, 53, 53); */
   text-align: center;
+  /* text-shadow: 5px 5px 6px #2e3f5a ; */
 }
 .header__nombre {
   color: white;
@@ -78,7 +85,7 @@ body::-webkit-scrollbar{
 }
 /*////////////////////////////////////////*/
 .caja-buscador{
-  background: var(--primario);
+  /* background: var(--primario); */
   display: flex;
   flex-direction: column;
   justify-content: center;
