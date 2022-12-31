@@ -95,7 +95,9 @@ export const Agregar = ({setListaEstado}) => {
           )
 
           : (
-              <i className="fa-solid fa-plus" onClick={cambiarEstado}></i>
+              <div className='contenedor-icono-mas' onClick={cambiarEstado}>
+                <i className="fa-solid fa-plus icono-mas"></i>
+              </div>
           )
         }
 

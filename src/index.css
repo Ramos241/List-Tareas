@@ -327,6 +327,20 @@ textarea.agregar__input{
   color: lightgrey;
 }
 
+.contenedor-icono-mas{
+  /* background-color: blue; */
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.icono-mas{
+  /* background-color: red; */
+}
+
 
 
 /* SECCION EDITAR */
@@ -346,6 +360,19 @@ textarea.agregar__input{
   box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
 
   padding: 4rem 1rem 1rem;
+
+  transition: 3s;
+
+  animation: crecer 300ms;
+}
+
+@keyframes crecer {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 
@@ -508,6 +535,8 @@ textarea.agregar__input{
     top: 1.5rem;
     font-size: 2.5rem;
   }
+
+
   /* EDITAR */
 
 
