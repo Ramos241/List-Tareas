@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { GuardarEnStorage } from '../helpers/Guardar_en-storage'
 
-export const Agregar = ({setListaEstado}) => {
+export const Agregar = ({setListaEstado, peliEditar}) => {
 
   // let [pelicula, setPelicula] = useState({})
 
@@ -55,7 +55,7 @@ export const Agregar = ({setListaEstado}) => {
   }
 
   return (
-    <>
+    <div className={peliEditar !== -1 ? 'nonear': ''}>
       {/* CAJA */}
       <div className={activo? "contenedor-agregar contenedor-agregar--activo": "contenedor-agregar"} ref={boton}>
         {
@@ -102,6 +102,6 @@ export const Agregar = ({setListaEstado}) => {
         }
 
       </div>
-    </>
+    </div>
   )
 }

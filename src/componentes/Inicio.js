@@ -17,7 +17,9 @@ function Inicio() {
         setListaEstado={setListaEstado}
         setPeliEditar={setPeliEditar} />
 
-      <Agregar setListaEstado={setListaEstado} />
+      <Agregar 
+        setListaEstado={setListaEstado}
+        peliEditar={peliEditar} />
       
       <Editar
         peliEditar={peliEditar}

@@ -253,7 +253,7 @@ body::-webkit-scrollbar{
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  
+
   /* z-index: 2; */
 }
 .contenedor-agregar--activo{
@@ -641,3 +641,8 @@ textarea.agregar__input{
 }
 
 
+
+
+.nonear{
+  display: none;
+}
