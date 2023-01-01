@@ -19,7 +19,7 @@ export const MisRutas = () => {
       </main>
 
       {/* FOOTER */}
-      <footer className="footer">
+      <footer className="footer" title='Portafolio'>
         Developed by <a className='link' href="https://jaenfigueroa.com">Jaen Figueroa</a> &copy; 2022
       </footer>
 

@@ -85,6 +85,9 @@ body::-webkit-scrollbar{
 .footer .link {
   font-weight: 500;
 }
+.footer .link:hover{
+  text-decoration: underline;
+}
 /*////////////////////////////////////////*/
 .caja-buscador{
   /* background: var(--primario); */
