@@ -17,7 +17,7 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
     let lista_filtrada = lista_peliculas.filter(elemento =>{
       // console.log(elemento);
       // console.log(elemento.titulo, busqueda)
-      return elemento.titulo.toLowerCase().includes(busqueda)
+      return elemento.titulo.toLowerCase().includes(busqueda.toLowerCase())
     })
 
     // setNumero(lista_filtrada.length)
@@ -40,7 +40,7 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
                 autoComplete='off'
                 />
           <button id="search" type='submit'>
-            <i class="fa-solid fa-magnifying-glass icono-lupa"></i>
+            <i className="fa-solid fa-magnifying-glass icono-lupa"></i>
             Buscar
             </button>
         </form>
