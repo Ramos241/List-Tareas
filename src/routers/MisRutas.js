@@ -20,7 +20,7 @@ export const MisRutas = () => {
 
       {/* FOOTER */}
       <footer className="footer" title='Portafolio'>
-        Developed by <a className='link' href="https://jaenfigueroa.com">Jaen Figueroa</a> &copy; 2022
+        Developed by <a className='link' href="https://jaenfigueroa.com" target='_blank'>Jaen Figueroa</a> &copy; 2022
       </footer>
 
     </HashRouter>
