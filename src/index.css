@@ -444,9 +444,7 @@ textarea.agregar__input{
 }
 
 
-
-
-/* PAGIAN DE ERROR - NO HAY RESULTADOS  */
+/* PAGINA DE ERROR - NO HAY RESULTADOS  */
 .contenedor__noResultados{
   display: flex;
   flex-direction: column;
@@ -462,6 +460,7 @@ textarea.agregar__input{
   width: 25rem;
   min-width: 25rem;
   min-height: 25rem;
+  animation: crecer 500ms;
 }
 .noResultados__titulo{
   font-size: 2rem;
@@ -661,10 +660,13 @@ textarea.agregar__input{
   align-items: center;
   min-height: calc(100vh - 10rem);
 }
+
+
 .imagen404{
   width: 240px;
   min-width: 240px;
   min-height: 240px;
+  animation: crecer 500ms;
 }
 .caja404{
   display: flex;
