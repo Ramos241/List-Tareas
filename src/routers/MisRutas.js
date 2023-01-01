@@ -1,5 +1,5 @@
 import React from 'react'
-import {Routes, Route, HashRouter} from 'react-router-dom'
+import {Routes, Route, HashRouter, Navigate} from 'react-router-dom'
 import Inicio from '../componentes/Inicio'
 import { Pagina404 } from '../componentes/Pagina404'
 
@@ -13,7 +13,8 @@ export const MisRutas = () => {
       {/* CUERPO */}
       <main className='main'>
         <Routes>
-          <Route path='/' element={<Inicio/>}/>
+          <Route path='/' element={<Navigate to='/inicio'/>}/>
+          <Route path='/inicio' element={<Inicio/>}/>
           <Route path='*' element={<Pagina404/>}/>
         </Routes>
       </main>
