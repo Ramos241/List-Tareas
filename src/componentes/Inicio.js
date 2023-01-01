@@ -10,7 +10,9 @@ function Inicio() {
   
   return (
     <>
-      <Buscador listaEstado={listaEstado} setListaEstado={setListaEstado} />
+      <Buscador
+        listaEstado={listaEstado}
+        setListaEstado={setListaEstado} />
 
       <Caja 
         listaEstado={listaEstado} 

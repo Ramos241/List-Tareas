@@ -504,6 +504,7 @@ textarea.agregar__input{
   /* CONTENEDOR */
   .contenedor-peliculas{
     padding: 3rem;
+    padding: 1.5rem 3rem 3rem;
     gap: 3rem;
   }
   .pelicula__boton{
@@ -731,4 +732,17 @@ textarea{
 input:focus,
 textarea:focus{
   border: 1px solid #333 !important;
+}
+.aviso-resultados{
+  padding: 1rem 1.5rem 0;
+}
+.aviso-resultados span{
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+@media (min-width: 550px) {
+  .aviso-resultados{
+    padding: 1rem 3rem 0;
+  }
 }

@@ -40,6 +40,7 @@ export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
             let elemento = lista.splice(indiceAntes, 1);
             let grupo = lista.splice(0, indiceNuevo)
   
+            
             let actualizado = [...grupo, ...elemento, ...lista]
             ////////////
   
@@ -64,20 +65,23 @@ export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
 
   //////////////////////
   return (
-    <div className='contenedor-peliculas' ref={listRef}>
-          { listaEstado !== null && listaEstado.length > 0 ?
-            listaEstado.map((pelicula)=>{
-            return(
+    <>
+      <p className='aviso-resultados'>Total de resultados: <span>{listaEstado.length}</span></p>
+      <div className='contenedor-peliculas' ref={listRef}>
+            { listaEstado !== null && listaEstado.length > 0 ?
+              listaEstado.map((pelicula)=>{
+              return(
 
-              <Pelicula
-                pelicula={pelicula}
-                setListaEstado={setListaEstado}
-                key={pelicula.id}
+                <Pelicula
+                  pelicula={pelicula}
+                  setListaEstado={setListaEstado}
+                  key={pelicula.id}
 
-                setPeliEditar={setPeliEditar} />
-            )
-            }) : <NoResultados />
-          }
-    </div>
+                  setPeliEditar={setPeliEditar} />
+              )
+              }) : <NoResultados />
+            }
+      </div>
+    </>
   )
 }
