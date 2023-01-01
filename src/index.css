@@ -2,7 +2,7 @@
   --primario: #40587c;
   --secundario: lightblue;
   --terciario-1: #a2aebf;
-  --terciario: #84909f;
+  --terciario: #a2aebf;
   --cuaternario: #d0d3d9;
 }
 
@@ -140,7 +140,7 @@ body::-webkit-scrollbar{
   gap: 1rem;
 }
 .caja-buscador button:hover{
-  background: var(--terciario-1);
+  background: var(--terciario);
   /* color: white; */
 }
 
@@ -185,7 +185,7 @@ body::-webkit-scrollbar{
 }
 
 .pelicula--seleccionado{
-  background: var(--terciario-1);
+  background: var(--terciario);
 }
 .pelicula--invisible{
   opacity: 0;
@@ -322,7 +322,7 @@ body::-webkit-scrollbar{
 
 .agregar__input[type=submit]:hover{
   background: var(--terciario);
-  color: white;
+  /* color: white; */
 }
 textarea.agregar__input{
   resize: none;
@@ -431,9 +431,7 @@ textarea.agregar__input{
   background-color: rgb(222, 222, 222);
 }
 .editar__boton-listo:hover{
-  background: #a2aebf;
-  background: #84909f;
-  color: white;
+  background: var(--terciario);
 }
 
 .icono-cerrar-editar{
