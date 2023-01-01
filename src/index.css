@@ -717,3 +717,13 @@ textarea.agregar__input{
     margin-top: 3rem;
   }
 }
+
+/* ////////////////// */
+input,
+textarea{
+  border: 1px solid transparent !important;
+}
+input:focus,
+textarea:focus{
+  border: 1px solid #333 !important;
+}
