@@ -31,7 +31,7 @@ export const Editar = ({ setListaEstado, peliEditar, setPeliEditar}) => {
     return (
         <div className='contenedor-editar'>
   
-          <i className="fa-solid fa-xmark icono-cerrar-editar" onClick={()=>setPeliEditar(-1)}></i>
+          <i className="fa-solid fa-xmark icono-cerrar-editar" onClick={()=>setPeliEditar(-1)} title='cerrar'></i>
 
           <h3 className='editar__titulo'>Editar Pelicula</h3>
           <form onSubmit={(evento)=>actualizarPelicula(evento, peliEditar.id)}
