@@ -59,7 +59,7 @@ export const Caja = ({listaEstado, setListaEstado, setPeliEditar}) => {
 
 
   const traerPeliculas = ()=>{
-    let peliculas = JSON.parse(localStorage.getItem('peliculas'))
+    let peliculas = JSON.parse(localStorage.getItem('peliculas')) || []
     return peliculas
   }
 
