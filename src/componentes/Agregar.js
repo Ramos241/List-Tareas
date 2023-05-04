@@ -69,7 +69,7 @@ export const Agregar = ({setListaEstado, peliEditar}) => {
                 (<p className='aviso' >
                   Haz guardado la pelicula: <b>{pelicula.titulo}</b>
                 </p>)
-              } */}
+              }  */}
               <form
                 onSubmit={crearPelicula}
                 className='agregar__formulario'>

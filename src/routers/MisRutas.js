@@ -25,7 +25,7 @@ export const MisRutas = () => {
         title='Portafolio'>
           Developed by
           <a className='link' 
-          href="https://jaenfigueroa.com" 
+          href="https://github.com/Ramos241" 
           target='_blank'
           rel="noreferrer">Gabriel Ramos</a> &copy; 2022
       </footer>
