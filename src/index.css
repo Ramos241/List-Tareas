@@ -1,6 +1,6 @@
 :root{
-  --primario: #40587c;
-  --secundario: lightblue;
+  --primario: #0d264c;
+  --secundario: rgb(103, 133, 152);
   --terciario-1: #a2aebf;
   --terciario: #a2aebf;
   --cuaternario: #d0d3d9;
@@ -50,7 +50,7 @@ body::-webkit-scrollbar{
 
   background: linear-gradient( 90deg, #344865, #40587c);
   background: var(--primario);
-  background:  #40587c;
+  background:  #0d264c;
   /* background: linear-gradient( -90deg, #344865 30%, transparent, #344865 85% ), url(../src/assets/fondo2.png); */
   /* background-image: url(../src/assets/fondo2.png); */
   background-size: cover;
@@ -104,12 +104,6 @@ body::-webkit-scrollbar{
   min-width: 20rem;
   max-width: 100%;
 }
-
-
-
-
-
-
 
 .caja-buscador form{
   border-radius: 1rem;
@@ -357,8 +351,6 @@ textarea.agregar__input{
   /* background-color: red; */
 }
 
-
-
 /* SECCION EDITAR */
 .contenedor-editar{
   background: var(--primario);
@@ -392,7 +384,6 @@ textarea.agregar__input{
     transform: scale(1);
   }
 }
-
 
 .editar__titulo{
   font-size: 2.5rem;

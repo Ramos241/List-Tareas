@@ -30,7 +30,7 @@ export const Buscador = ({listaEstado, setListaEstado}) => {
     <section className='header'>
       {/*HEADER */}
       <header className="header__logo">
-        <h1 className="header__nombre">Mis Peliculas</h1>
+        <h1 className="header__nombre">Mis Tareas</h1>
       </header>
     
       {/* NAV */}

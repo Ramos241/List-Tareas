@@ -27,7 +27,7 @@ export const MisRutas = () => {
           <a className='link' 
           href="https://jaenfigueroa.com" 
           target='_blank'
-          rel="noreferrer">Jaen Figueroa</a> &copy; 2022
+          rel="noreferrer">Gabriel Ramos</a> &copy; 2022
       </footer>
 
     </HashRouter>

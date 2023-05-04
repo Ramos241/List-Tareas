@@ -63,7 +63,7 @@ export const Agregar = ({setListaEstado, peliEditar}) => {
             <div>
               <i className="fa-solid fa-xmark icono-cerrar" onClick={cambiarEstado} title='cerrar'></i>
 
-              <h3 className="agregar__titulo">Añadir pelicula</h3>
+              <h3 className="agregar__titulo">Añadir Tarea</h3>
               {/* {
                 pelicula.id &&
                 (<p className='aviso' >
